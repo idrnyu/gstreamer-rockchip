@@ -72,7 +72,7 @@ static GstStaticPadTemplate gst_mpp_video_dec_src_template =
         "width  = (int) [ 32, 4096 ], " "height =  (int) [ 32, 4096 ]"
         ";"
         "video/x-raw, "
-        "format = (string) P010_10LEC, "
+        "format = (string) P010_10LE, "
         "width  = (int) [ 32, 4096 ], " "height =  (int) [ 32, 4096 ]" ";")
     );
 
@@ -121,7 +121,7 @@ mpp_frame_type_to_gst_video_format (MppFrameFormat fmt)
       return GST_VIDEO_FORMAT_NV12;
       break;
     case MPP_FMT_YUV420SP_10BIT:
-      return GST_VIDEO_FORMAT_P010_10LEC;
+      return GST_VIDEO_FORMAT_P010_10LE;
       break;
     default:
       return GST_VIDEO_FORMAT_UNKNOWN;

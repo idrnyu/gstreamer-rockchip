@@ -349,7 +349,7 @@ AG_GST_CHECK_FEATURE(KMS, [drm/kms libraries], kms, [
 translit(dnm, m, l) AM_CONDITIONAL(USE_DRMROCKCHIP, true)
 AG_GST_CHECK_FEATURE(DRMROCKCHIP, [rockchip drm/kms libraries], drmrockchip, [
   PKG_CHECK_MODULES([X11], [x11], HAVE_X11=yes, HAVE_X11=no)
-  PKG_CHECK_MODULES([DRMROCKCHIP], [libdrm_rockchip],
+  PKG_CHECK_MODULES([DRMROCKCHIP], [libdrm],
     HAVE_DRMROCKCHIP=yes, HAVE_DRMROCKCHIP=no)
 ])
 

@@ -20,10 +20,10 @@
 /* for XkbKeycodeToKeysym */
 #include <X11/XKBlib.h>
 
-#include <drm.h>
+#include <libdrm/drm.h>
 #include <xf86drm.h>
 #include <xf86drmMode.h>
-#include <drm_fourcc.h>
+#include <libdrm/drm_fourcc.h>
 #include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
